@@ -52,7 +52,7 @@ const searchAllJob = async (keyword,page,limit) => {
   try {
     const res = await fetch(`${baseURL}q=${keyword.trim()}&_page=${page}&_limit=${limit}`);
     const data = await res.json();
-    // console.log(data);
+    console.log(data);
     return data;
   } catch (err) {
     console.log("error :", err);
